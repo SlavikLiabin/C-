@@ -1,0 +1,14 @@
+C:\SkillFactory\C#\Main\Main\bin\Debug\net8.0\Main.exe
+C:\SkillFactory\C#\Main\Main\bin\Debug\net8.0\Main.deps.json
+C:\SkillFactory\C#\Main\Main\bin\Debug\net8.0\Main.runtimeconfig.json
+C:\SkillFactory\C#\Main\Main\bin\Debug\net8.0\Main.dll
+C:\SkillFactory\C#\Main\Main\bin\Debug\net8.0\Main.pdb
+C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\Main.GeneratedMSBuildEditorConfig.editorconfig
+C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\Main.AssemblyInfoInputs.cache
+C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\Main.AssemblyInfo.cs
+C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\Main.csproj.CoreCompileInputs.cache
+C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\Main.dll
+C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\refint\Main.dll
+C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\Main.pdb
+C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\Main.genruntimeconfig.cache
+C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\ref\Main.dll
