@@ -12,3 +12,4 @@ C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\refint\Main.dll
 C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\Main.pdb
 C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\Main.genruntimeconfig.cache
 C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\ref\Main.dll
+C:\SkillFactory\C#\Main\Main\obj\Debug\net8.0\Main.sourcelink.json
