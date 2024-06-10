@@ -1,24 +1,43 @@
 using System;
-					
-public class Program
+
+namespace FirstApp
 {
-	static void Main(string[] args)
+	class Human
 	{
-		int money;
-		int food;
-		int foodUnitPrice = 10;
-		bool isAbleToPay;
-		
-		Console.WriteLine($"Добро пожаловать в пекарню! Сегодня еда по {foodUnitPrice} монет.");
-		Console.WriteLine("Сколько у вас золота?");
-		money = Convert.ToInt32(Console.ReadLine());
-		Console.WriteLine("Сколько еды вам нужно?");
-		food = Convert.ToInt32(Console.ReadLine());
-		
-		isAbleToPay = money >= food * foodUnitPrice;
-		food *= Convert.ToInt32(isAbleToPay);
-		
-		money -= food * foodUnitPrice;
-		Console.WriteLine($"У вас в сумке {food} единиц еды, и {money} монет.");
+		// Поля класса
+		public string name;
+		public int age;
+
+		// Метод класса
+		public void Greetings()
+		{
+			Console.WriteLine("Меня зовут {0}, мне {1}", name, age);
+		}
+	}
+
+	struct Animal
+	{
+		// Поля структуры
+		public string type;
+		public string name;
+		public int age;
+
+		// Метод структуры
+		public void Info()
+		{
+			Console.WriteLine("Это {0} по кличке {1}, ему {2}", type, name, age);
+		}
+	}
+
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Human human = new Human{name = "Дмитрий", age = 23};
+			
+			human.Greetings();
+
+			Console.ReadKey();
+		}
 	}
 }
