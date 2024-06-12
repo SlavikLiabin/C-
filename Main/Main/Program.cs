@@ -1,43 +1,21 @@
 using System;
-
-namespace FirstApp
+					
+public class Program
 {
-	class Human
+	public static void Main(string[] args)
 	{
-		// Поля класса
-		public string name;
-		public int age;
+		Random rand = new Random();
+		
+		int health1 = rand.Next(90, 100);
+		int damage1 = rand.Next(5, 20);
+		int armor1 = rand.Next(25, 65);
+		
+		int health2 = rand.Next(80, 150);
+		int damage2 = rand.Next(20, 40);
+		int armor2 = rand.Next(65, 100);
+		
+		Console.WriteLine($"Гладиатор 1 - {health1} здоровье, {damage1} наносимый урон, {armor1} броня");
+		Console.WriteLine($"Гладиатор 2 - {health2} здоровье, {damage2} наносимый урон, {armor2} броня");
 
-		// Метод класса
-		public void Greetings()
-		{
-			Console.WriteLine("Меня зовут {0}, мне {1}", name, age);
-		}
-	}
-
-	struct Animal
-	{
-		// Поля структуры
-		public string type;
-		public string name;
-		public int age;
-
-		// Метод структуры
-		public void Info()
-		{
-			Console.WriteLine("Это {0} по кличке {1}, ему {2}", type, name, age);
-		}
-	}
-
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			Human human = new Human{name = "Дмитрий", age = 23};
-			
-			human.Greetings();
-
-			Console.ReadKey();
-		}
 	}
 }
