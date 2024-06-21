@@ -8,35 +8,31 @@ namespace CSharpLight
 {
     internal class Program
     {
-        static void Main(string[] args)
+      static class IntExtensions
+      {
+        public statis int GetNegative(this int number)
         {
-            abstract class ComputerPart 
+            if(number > 0)
             {
-              public abstract void Work();
+                return - number;
             }
-
-            class Processor: ComputerPart 
+            else
             {
-              public override void Work() 
-              {
-                Console.WriteLine("Processor");
-              }
+                return number;
             }
-
-            class MotherBoard: ComputerPart 
-            {
-              public override void Work() 
-              {
-                Console.WriteLine("MotherBoard");
-              }
-            }
-            class GraphicCard: ComputerPart 
-            {
-              public override void Work() 
-              {
-                Console.WriteLine("GraphicCard");
-              }
-            }              
         }
+
+        public static int GetPositive(this int number)
+        {
+            if(number < 0)
+            {
+                return - number;
+            }
+            else
+            {
+                return number;
+            }
+        }
+      } 
     }
 }
