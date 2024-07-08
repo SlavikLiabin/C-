@@ -8,31 +8,25 @@ namespace CSharpLight
 {
     internal class Program
     {
-      static class IntExtensions
+      static void Main(string[] args)
       {
-        public statis int GetNegative(this int number)
-        {
-            if(number > 0)
-            {
-                return - number;
-            }
-            else
-            {
-                return number;
-            }
-        }
+        Car ferrari = new Car();
+      }
+    }
 
-        public static int GetPositive(this int number)
-        {
-            if(number < 0)
-            {
-                return - number;
-            }
-            else
-            {
-                return number;
-            }
-        }
-      } 
+    class Car
+    {
+      public string Name;
+      public int HorsePower;
+      public int Age;
+      public float MaxSpeed;
+
+      public Car(string name, int horsePower, int age, float maxSpeed)
+      {
+        Name = name;
+        HorsePower = horsePower;
+        Age = age;
+        MaxSpeed = maxSpeed;
+      }
     }
 }
