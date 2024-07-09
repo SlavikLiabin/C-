@@ -1,32 +1,29 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpLight
+namespace learning
 {
     internal class Program
     {
-      static void Main(string[] args)
-      {
-        Car ferrari = new Car();
-      }
-    }
-
-    class Car
-    {
-      public string Name;
-      public int HorsePower;
-      public int Age;
-      public float MaxSpeed;
-
-      public Car(string name, int horsePower, int age, float maxSpeed)
-      {
-        Name = name;
-        HorsePower = horsePower;
-        Age = age;
-        MaxSpeed = maxSpeed;
-      }
+        static void Main(string[] args)
+        {
+            DriveInfo[] drives = DriveInfo.GetDrives();
+            foreach (DriveInfo drive in drives) 
+            {
+                Console.WriteLine($"Название: {drive.Name}");
+                Console.WriteLine($"Тип: {drive.DriveType}");
+                if(drive.IsReady)
+                {
+                    Console.WriteLine($"Объем: {drive.TotalSize}");
+                    Console.WriteLine($"Свободно: {drive.TotalFreeSpace}");
+                    Console.WriteLine($"Метка: {drive.VolumeLabel}");
+                }
+                Console.ReadKey();
+            }
+        }
     }
 }
